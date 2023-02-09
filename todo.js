@@ -4,11 +4,11 @@ var ul = document.querySelector('ul');
 
 
 
-function inputLength(){
+function inputLength() {
     return input.value.length;
 }
 
-function createListElement(){
+function createListElement() {
     var li = document.createElement('li');
     li.appendChild(document.createTextNode(input.value));
     ul.appendChild(li);
@@ -16,15 +16,16 @@ function createListElement(){
 
 }
 
-button.addEventListener("click", function () {
+function addListAfterClick() {
     if (inputLength() > 0) {
         createListElement();
     }
-})
-
-input.addEventListener("keypress", function (event) {
+}
+function addListAfterKeypress(event) {
     if (inputLength() > 0 && event.keyCode === 13) {
         createListElement();
     }
-})
+}
+button.addEventListener("click", addListAfterClick);
 
+input.addEventListener("keypress", addListAfterKeypress);
