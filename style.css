@@ -24,3 +24,7 @@ input{
     margin: 2px;
     padding: 2px;
 }
+h1, h5{
+    background: linear-gradient(to right, rgb(0, 255, 0), rgb(255, 0, 0));
+
+}
