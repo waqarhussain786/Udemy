@@ -1,30 +1,30 @@
-const numbersList = [12, 54, 1, 45, 451, 561, 61, 4131, 513, 6, 146, 16, 51];
+const numberList = [42,324,253,235,432,25,5,345,2346,3426,436,2,4513,5];
 
-const multiplyFunction = numbersList.map((numbers) => {
-    return numbers * 10;
+const multiplyFunction = numberList.map((a) => {
+    return a * 32;
+})
+
+console.log('This is your answer' + multiplyFunction);
+
+const answer = [];
+const anOtherFunction = numberList.forEach((a) => {
+    answer.push(a * 0);
 });
 
-console.log(multiplyFunction);
+console.log('This is your answer' + answer);
 
+// const numbersList = [12, 54, 1, 45, 451, 561, 61, 4131, 513, 6, 146, 16, 51];
 
-
-
-
-// const numbers = [4, 5, 6, 7, 8, 9, 0];
-
-// const answer = ['This is your answer'];
-
-// const a = numbers.forEach((n) => {
-//     answer.push(n * 50);
+// const multiplyFunction = numbersList.map((numbers) => {
+//     return numbers * 10;
 // });
 
-// console.log(answer);
+// console.log('This is your answer ' + multiplyFunction);
+// // ____________________________________________________________
+// const answer = [];
 
-// // _____________________________________________
+// const arrayFunction = numbersList.forEach((numb) => {
+//     answer.push(numb * 5);
+// });
 
-
-// const mapArray = numbers.map((n) => {
-//     return n * 50;
-// })
-// console.log(mapArray);
-
+// console.log('This is your another answer ' + answer);
