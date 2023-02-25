@@ -1,5 +1,7 @@
-const numberList = [100, 42, 324, 253, 235, 432, 25, 5, 345, 2346, 3426, 436, 2, 4513, 5];
 
+// Map Filter Reduce
+
+const numberList = [100, 42, 324, 253, 235, 432, 25, 5, 345, 2346, 3426, 436, 2, 4513, 5];
 const multiplyFunction = numberList.map((a) => {
     return a * 0;
 });
